@@ -13,7 +13,7 @@ Ensure `genshin_impact_-_Adjusted.csv` and `genshin_impact.csv` are in the same 
 
 ---
 
-__### Option 1: Interactive Terminal Mode (Recommended)__
+**### Option 1: Interactive Terminal Mode (Recommended)**
 
 
 Launch the program without arguments to trigger interactive configuration prompts:
