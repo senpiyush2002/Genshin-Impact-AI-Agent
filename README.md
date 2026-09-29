@@ -8,7 +8,7 @@ Make sure Python 3.8+ and the required packages are installed:
 ```
 Ensure 'genshin_impact_-_Adjusted.csv' and 'genshin_impact.csv' are in the same folder as the script. 
 
-# Assumptions made:
+## Assumptions made:
 Meta Information:
 •	release_date
 •	days_since_release
@@ -16,18 +16,18 @@ Meta Information:
 •	num_banners
 •	is_standard_banner
 •	is_archon
-# None of these were used for analysis as these are ownership details and character banner details, both of which aren't needed for a combat scenario.
+### None of these were used for analysis as these are ownership details and character banner details, both of which aren't needed for a combat scenario.
 
 Popularity / Ownership Signals
 •	pulled_count
 •	duplicate_rate
 •	avg_copies_per_player
 •	c6_rate 
-# Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.
+### Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.
 
-# Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
+### Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
 
-# Team synergy requirements weren't implemented as the case lacked data for the same.
+### Team synergy requirements weren't implemented as the case lacked data for the same.
 
 ## Assumptions based on Ascension stats:
 
