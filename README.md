@@ -8,7 +8,7 @@ Make sure Python 3.8+ and the required packages are installed:
 ```
 Ensure 'genshin_impact_-_Adjusted.csv' and 'genshin_impact.csv' are in the same folder as the script. 
 
-### Assumptions made:
+# Assumptions made:
 Meta Information:
 •	release_date
 •	days_since_release
@@ -25,13 +25,23 @@ Popularity / Ownership Signals
 •	c6_rate 
 # Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.
 
-### Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
+# Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
 
-### Team synergy requirements weren't implemented as the case lacked data for the same.
+# Team synergy requirements weren't implemented as the case lacked data for the same.
+
+## Assumptions based on Ascension stats:
+
+Genshin's reaction system wasn't used, instead having EM gave a passive boost to characters when the teams had characters of different elements.
+
+Characters with ER ascension or Electro element are reliant on burst, and thus affected by energy field conditions.
+
+Characters with Atk, Def or HP ascension gain 28.8% more of that stat, added to final_atk, final_def or final_HP.
+
+Characters with Healing bonus ascension gain higher score on survivaability based scenarios.
 
 # How to Run
 
-### Option 1: Interactive Terminal Mode (Recommended)
+## Option 1: Interactive Terminal Mode (Recommended)
 
 
 Launch the program without arguments to trigger interactive configuration prompts:
@@ -49,7 +59,7 @@ You will be prompted to choose:
 * Drafting strategy (Optimal AI selection, Fully Random, or Custom Characters)
 
 ---
-### Option 2: Command-Line Interface (CLI)
+## Option 2: Command-Line Interface (CLI)
 
 Run directly with arguments for automated or custom execution:
 
@@ -81,7 +91,7 @@ python genshin_ai_agent_v3_2.py --team-size 4 --randomize-teams --randomize-aren
 
 The final combat score and battle outcome are directly influenced by the following key parameters:
 
-### 1. Simulation & Toggle Settings
+## 1. Simulation & Toggle Settings
 
 * **`ascension_stat_calc` (0 or 1)**:
 * `1`: Uses `final_hp`, `final_atk`, `final_def` along with ascension flags (`dmg_bonus`, `crit_ascension`, `Heals`, `em`).
@@ -98,7 +108,7 @@ The final combat score and battle outcome are directly influenced by the followi
 
 ---
 
-### 2. Team & Composition Parameters
+## 2. Team & Composition Parameters
 
 * **`team_size`**: Number of fighters per side (1–8).
 * **`custom_chars_a` / `custom_chars_b**`: Pre-selected character names forcing specific picks into Team A/B.
@@ -107,7 +117,7 @@ The final combat score and battle outcome are directly influenced by the followi
 
 ---
 
-### 3. Battlefield & Environmental Parameters
+## 3. Battlefield & Environmental Parameters
 
 * **`objective`**: Defines character selection heuristics and combat decision priorities:
 * **A (Elimination)**: Prioritizes ATK, single On-Field carry + Off-Field support structure.
