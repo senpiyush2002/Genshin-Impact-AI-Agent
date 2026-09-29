@@ -136,11 +136,6 @@ The final combat score and battle outcome are directly influenced by the followi
 * **`terrain`**: Grants weapon/elemental bonuses (e.g., *Floating Islands* boosts Bow +15%, Claymore -10%).
 * **`hazard`**: Environmental field effects (e.g., *Lava Eruption* causes HP drain, *Energy Blackout* reduces energy, *Shield Nullification* suppresses shields).
 * **`elemental_field`**: Matching element characters receive a +10% contribution bonus.
-* **`visibility` & `energy_flux**`: Affect accuracy/range weapons and burst energy decay rates.
+* **`visibility` & `energy_flux`**: Affect accuracy/range weapons and burst energy decay rates.
 
 
-
-
-```
-
-```
