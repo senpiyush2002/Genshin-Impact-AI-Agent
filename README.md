@@ -17,7 +17,7 @@ Meta Information:
 •	num_banners
 •	is_standard_banner
 •	is_archon
-### None of these were used for analysis as these are ownership details and character banner details, both of which aren't needed for a combat scenario.
+**None of these were used for analysis as these are ownership details and character banner details, both of which aren't needed for a combat scenario.**
 
 Popularity / Ownership Signals
 •	pulled_count
@@ -39,6 +39,11 @@ Characters with ER ascension or Electro element are reliant on burst, and thus a
 Characters with Atk, Def or HP ascension gain 28.8% more of that stat, added to final_atk, final_def or final_HP.
 
 Characters with Healing bonus ascension gain higher score on survivaability based scenarios.
+
+## Data Adjusting/cleaning
+Changes were saved in 'genshin_impact_-_Adjusted.csv'
+Ownership details were removed.
+Effects of Ascension stats were applied, and new fields were created to show boolean checks.
 
 # How to Run
 
