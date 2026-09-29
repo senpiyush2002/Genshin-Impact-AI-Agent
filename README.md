@@ -1,19 +1,37 @@
 # Genshin-Impact-AI-Agent
 Based on case study to build a combat simulator on Genshin Impact characters. Note: Does not simulte actual Genshin combat, and uses a character vs character scenario with preselected objectives and random field environments. 
-# How to Run
 
 # Prerequisites
-Make sure Python 3.8+ and the required packages are installed:
-```bash
-pip install pandas numpy
 
+Make sure Python 3.8+ and the required packages are installed: 
+```bash pip install pandas numpy 
+```
+Ensure 'genshin_impact_-_Adjusted.csv' and 'genshin_impact.csv' are in the same folder as the script. 
 
+### Assumptions made:
+Meta Information:
+•	release_date
+•	days_since_release
+•	months_since_release
+•	num_banners
+•	is_standard_banner
+•	is_archon
+# None of these were used for analysis as these are ownership details and character banner details, both of which aren't needed for a combat scenario.
 
-Ensure `genshin_impact_-_Adjusted.csv` and `genshin_impact.csv` are in the same folder as the script.
+Popularity / Ownership Signals
+•	pulled_count
+•	duplicate_rate
+•	avg_copies_per_player
+•	c6_rate 
+# Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.
 
----
+### Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
 
-**### Option 1: Interactive Terminal Mode (Recommended)**
+### Team synergy requirements weren't implemented as the case lacked data for the same.
+
+# How to Run
+
+### Option 1: Interactive Terminal Mode (Recommended)
 
 
 Launch the program without arguments to trigger interactive configuration prompts:
@@ -49,7 +67,7 @@ python genshin_ai_agent_v3_2.py --team-size 4 --randomize-teams --randomize-aren
 
 ---
 
-## ✨ Features
+## Features
 
 * **Dynamic Team Drafting**: Optimal heuristic selection based on objective requirements, role complementarities, and popularity signals.
 * **Interactive & CLI Setup**: Choose team sizes, picks, objectives, and field toggles via interactive prompts or CLI flags.
@@ -59,7 +77,7 @@ python genshin_ai_agent_v3_2.py --team-size 4 --randomize-teams --randomize-aren
 
 ---
 
-## ⚙️ Parameters Affecting Final Results
+## Parameters Affecting Final Results
 
 The final combat score and battle outcome are directly influenced by the following key parameters:
 
@@ -103,6 +121,9 @@ The final combat score and battle outcome are directly influenced by the followi
 * **`hazard`**: Environmental field effects (e.g., *Lava Eruption* causes HP drain, *Energy Blackout* reduces energy, *Shield Nullification* suppresses shields).
 * **`elemental_field`**: Matching element characters receive a +10% contribution bonus.
 * **`visibility` & `energy_flux**`: Affect accuracy/range weapons and burst energy decay rates.
+
+
+
 
 ```
 
