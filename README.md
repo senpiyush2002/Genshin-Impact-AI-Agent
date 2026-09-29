@@ -4,7 +4,8 @@ Based on case study to build a combat simulator on Genshin Impact characters. No
 # Prerequisites
 
 Make sure Python 3.8+ and the required packages are installed: 
-```bash pip install pandas numpy 
+```
+bash pip install pandas numpy 
 ```
 Ensure 'genshin_impact_-_Adjusted.csv' and 'genshin_impact.csv' are in the same folder as the script. 
 
@@ -23,13 +24,13 @@ Popularity / Ownership Signals
 •	duplicate_rate
 •	avg_copies_per_player
 •	c6_rate 
-### Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.
+**Avg copies per player was used to simulate the average constellation owned by the character,and adjust power level according to average constellation. Others details weren't used as those are ownership details.**
 
-### Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.
+**Arena Mechanics: Increase or Decrease coming from the arena were quantified using assumed values as data doesn't have quantification for the same.**
 
-### Team synergy requirements weren't implemented as the case lacked data for the same.
+**Team synergy requirements weren't implemented as the case lacked data for the same.**
 
-## Assumptions based on Ascension stats:
+### Assumptions based on Ascension stats:
 
 Genshin's reaction system wasn't used, instead having EM gave a passive boost to characters when the teams had characters of different elements.
 
